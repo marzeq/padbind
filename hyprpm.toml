@@ -1,0 +1,12 @@
+[repository]
+name = "padbind"
+authors = ["marzeq"]
+
+[padbind]
+description = "SDL3 gamepad bindings for Hyprland's native Lua configuration"
+authors = ["marzeq"]
+output = "build/padbind.so"
+build = [
+    "cmake -S . -B build -DCMAKE_BUILD_TYPE=Release",
+    "cmake --build build --parallel",
+]
